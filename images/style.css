@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+:root {
+    --DarkBlueIntroBg: hsl(217, 28%, 15%);
+    --DarkBlueMainBg: hsl(218, 28%, 13%);
+    --DarkBlueFooterBg: hsl(216, 53%, 9%);
+    --DarkBlueTestBg: hsl(219, 30%, 18%);
+    --Cyan: hsl(176, 68%, 64%);
+    --Blue: hsl(198, 60%, 50%);
+    --LightRed: hsl(0, 100%, 63%);
+}
+
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+/* Track */
+
+ ::-webkit-scrollbar-track {
+    background: var(--DarkBlueFooterBg)
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: var(--Blue);
+}
+
+
+/* Handle on hover */
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: var(--Cyan);
+}
+
+* {
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.navbar {
+    background-color: var(--DarkBlueIntroBg);
+}
+
+a:hover {
+    opacity: 1!important;
+    transition: .3s;
+    text-decoration: underline;
+}
+
+.landing {
+    background-color: var(--DarkBlueIntroBg);
+}
+
+.introImg {
+    z-index: 2;
+}
+
+.landing h1 {
+    position: relative;
+    line-height: 1.5;
+    width: 50%;
+    z-index: 2;
+}
+
+.landing h5 {
+    position: relative;
+    width: 33%;
+    line-height: 1.7;
+    opacity: 85%;
+    z-index: 2;
+}
+
+.getStarted {
+    position: relative;
+    background: linear-gradient(to left, var(--Blue), cyan);
+    color: white;
+    border: none;
+    width: 18%;
+    z-index: 2;
+}
+
+.getStarted:hover {
+    background: var(--Cyan);
+}
+
+@media (max-width:572px) {
+    .navbar-brand img {
+        width: 65%!important;
+    }
+    .landing h5 {
+        width: 80%;
+        font-size: 14px;
+    }
+    .getStarted {
+        width: 85%!important;
+    }
+    .landing h1 {
+        width: 100%;
+    }
+    .curvy {
+        bottom: 0;
+        top: 40%;
+    }
+}
+
+@media(min-width:573px) {
+    .landing h1 {
+        width: 100%;
+    }
+    .landing h5 {
+        width: 80%;
+    }
+}
+
+@media(max-width:872px) {
+    .curvy {
+        bottom: 0;
+        top: 50%;
+    }
+    .getStarted {
+        width: 30%;
+    }
+    .pros {
+        height: 400px!important;
+    }
+}
+
+@media(min-width:872px) {
+    .curvy {
+        bottom: 0;
+        top: 60%;
+    }
+    .landing h1 {
+        width: 50%;
+    }
+    .landing h5 {
+        width: 33%;
+    }
+}
+
+@media (max-width:1230px) {
+    .pros {
+        top: -30px;
+    }
+}
+
+@media (max-width:1150px) {
+    .pros {
+        height: 250px!important;
+        top: -100px
+    }
+}
+
+@media (max-width:1020px) {
+    .pros {
+        top: -130px
+    }
+}
+
+@media (max-width:900px) {
+    .pros {
+        top: -180px
+    }
+}
+
+@media (max-width:850px) and (min-width:550px) {
+    .pros {
+        top: -220px
+    }
+}
+
+@media (max-width:420px) and (min-width:290px) {
+    .pros {
+        top: -200px
+    }
+}
+
+.curvy {
+    z-index: 1;
+}
+
+.pros {
+    height: 100px;
+    background-color: var(--DarkBlueMainBg);
+}
+
+.mid {
+    background-color: var(--DarkBlueMainBg);
+}
+
+p {
+    line-height: 1.8;
+}
+
+.main {
+    background-color: var(--DarkBlueMainBg);
+}
+
+.productive a {
+    color: var(--Cyan);
+    text-decoration-color: var(--Cyan);
+    text-underline-offset: 8px;
+    transition: 0s;
+}
+
+.productive a:hover {
+    text-decoration-color: white;
+    color: white;
+}
+
+.productive a:hover>img {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(112deg) brightness(101%) contrast(95%);
+}
+
+@media (max-width:540px) {
+    .productive h1 {
+        font-size: 17px;
+        width: 100%;
+    }
+}
+
+@media (min-width:541px) {
+    .productive h1 {
+        font-size: 28px;
+        width: 75%;
+    }
+}
+
+.testimonial {
+    background-color: var(--DarkBlueTestBg);
+}
+
+.testimonial img {
+    width: 30px;
+    height: 30px;
+}
+
+.testimonial {
+    z-index: 100;
+    position: relative;
+}
+
+.quote {
+    z-index: 1;
+    top: -20px;
+}
+
+.mail {
+    background: linear-gradient(to bottom, var(--DarkBlueMainBg)50%, var(--DarkBlueFooterBg)50.1%);
+}
+
+.box {
+    background-color: var(--DarkBlueIntroBg);
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.782);
+    width: 60%;
+}
+
+.email input {
+    width: 60%
+}
+
+.buttons {
+    width: 25%;
+}
+
+.mail p {
+    width: 75%
+}
+
+.mail h2 {
+    font-size: 26px;
+}
+
+input:focus {
+    border: none;
+    outline: none;
+}
+
+.ss {
+    width: 35%;
+}
+
+@media (max-width:992px) {
+    .box {
+        width: 95%;
+    }
+    .email input {
+        width: 85%
+    }
+    .buttons {
+        width: 100%;
+    }
+    .mail p {
+        width: 100%;
+    }
+    .mail h2 {
+        font-size: 16px;
+    }
+    .ss {
+        width: 90%
+    }
+}
+
+.footer {
+    background-color: var(--DarkBlueFooterBg);
+}
+
+.footer .first div img {
+    width: 15px;
+    height: 20px;
+}
+
+i:hover {
+    color: var(--Cyan);
+    cursor: pointer;
+}
+
+i {
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 5px;
+}
